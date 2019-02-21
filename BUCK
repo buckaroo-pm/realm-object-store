@@ -7,12 +7,17 @@ realm_core = \
 core_foundation = \
   buckaroo_deps_from_package('github.com/buckaroo-pm/host-core-foundation')
 
+security = \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-security')
+
 macos_srcs = glob([
   'src/impl/apple/**/*.cpp',
+  'src/util/apple/**/*.cpp',
 ])
 
 iphone_srcs = glob([
   'src/impl/apple/**/*.cpp',
+  'src/util/apple/**/*.cpp',
 ])
 
 linux_srcs = glob([
@@ -31,6 +36,8 @@ cxx_library(
   ]),
   srcs = glob([
     'src/*.cpp',
+    'src/impl/*.cpp',
+    'src/util/*.cpp',
   ]),
   platform_srcs = [
     ('iphone.*', iphone_srcs),
@@ -40,8 +47,8 @@ cxx_library(
   ],
   deps = buckaroo_deps_from_package('github.com/buckaroo-pm/realm-core'),
   platform_deps = [
-    ('iphoneos.*', core_foundation),
-    ('macos.*', core_foundation),
+    ('iphoneos.*', core_foundation + security),
+    ('macos.*', core_foundation + security),
   ],
   visibility = [
     'PUBLIC',

@@ -1,8 +1,12 @@
-manifest = "2b1421bfac43eb94fa4a24fe7544ef46eb7ed5dd284c7038b0fe2a81c2415c2b"
+manifest = "f9dac7af50bb843f1a251687f1edb43d386a0bcbbeb6684c5f6ad981cf613aab"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/host-core-foundation"
 target = "//:core-foundation"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-security"
+target = "//:security"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/realm-core"
@@ -12,9 +16,13 @@ target = "//:realm-core"
 versions = [ "branch=master" ]
 revision = "fd7081ffe1244afb86c41c2d41d3603f851feae8"
 
+[lock."github.com/buckaroo-pm/host-security"]
+versions = [ "branch=master" ]
+revision = "f7aba7ed43bd385648cb550128ce69800172343c"
+
 [lock."github.com/buckaroo-pm/realm-core"]
 versions = [ "branch=master" ]
-revision = "42e4b262e922d6026a182af2eb2f583a4de49072"
+revision = "9849b5ac551a653ec0d541a7c13129c9b9de1bd3"
 
 [lock."github.com/buckaroo-pm/taocpp-pegtl"]
 versions = [ "2.7.1" ]
