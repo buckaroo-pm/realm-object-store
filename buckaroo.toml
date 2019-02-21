@@ -1,6 +1,10 @@
 targets = [ "//:object-store" ]
 
 [[dependency]]
+package = "github.com/buckaroo-pm/host-core-foundation"
+version = "*"
+
+[[dependency]]
 package = "github.com/buckaroo-pm/realm-core"
 version = "*"
 

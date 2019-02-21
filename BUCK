@@ -1,5 +1,11 @@
 load('//:subdir_glob.bzl', 'subdir_glob')
-load('//:buckaroo_macros.bzl', 'buckaroo_deps')
+load('//:buckaroo_macros.bzl', 'buckaroo_deps_from_package')
+
+realm_core = \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/realm-core')
+
+core_foundation = \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-core-foundation')
 
 macos_srcs = glob([
   'src/impl/apple/**/*.cpp',
@@ -32,7 +38,11 @@ cxx_library(
     ('linux.*', linux_srcs),
     ('windows.*', windows_srcs),
   ],
-  deps = buckaroo_deps(),
+  deps = buckaroo_deps_from_package('github.com/buckaroo-pm/realm-core'),
+  platform_deps = [
+    ('iphoneos.*', core_foundation),
+    ('macos.*', core_foundation),
+  ],
   visibility = [
     'PUBLIC',
   ],

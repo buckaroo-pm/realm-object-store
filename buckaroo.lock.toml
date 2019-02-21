@@ -1,8 +1,16 @@
-manifest = "182c91acf5c4b346ba28a27fc36207245e5f6115749d9c2daf2beb0edbf6ecb1"
+manifest = "2b1421bfac43eb94fa4a24fe7544ef46eb7ed5dd284c7038b0fe2a81c2415c2b"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-foundation"
+target = "//:core-foundation"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/realm-core"
 target = "//:realm-core"
+
+[lock."github.com/buckaroo-pm/host-core-foundation"]
+versions = [ "branch=master" ]
+revision = "fd7081ffe1244afb86c41c2d41d3603f851feae8"
 
 [lock."github.com/buckaroo-pm/realm-core"]
 versions = [ "branch=master" ]
