@@ -1,0 +1,13 @@
+manifest = "182c91acf5c4b346ba28a27fc36207245e5f6115749d9c2daf2beb0edbf6ecb1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/realm-core"
+target = "//:realm-core"
+
+[lock."github.com/buckaroo-pm/realm-core"]
+versions = [ "branch=master" ]
+revision = "42e4b262e922d6026a182af2eb2f583a4de49072"
+
+[lock."github.com/buckaroo-pm/taocpp-pegtl"]
+versions = [ "2.7.1" ]
+revision = "539160b1344b901187f282a52a90ce1b69d84e0f"
