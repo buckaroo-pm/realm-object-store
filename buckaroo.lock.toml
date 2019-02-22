@@ -1,4 +1,4 @@
-manifest = "f9dac7af50bb843f1a251687f1edb43d386a0bcbbeb6684c5f6ad981cf613aab"
+manifest = "b93b4ee67fede15760ee58379f96f7e589f3de0523db4b8ba060d8c8c3b0c2e0"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/host-core-foundation"
@@ -9,8 +9,20 @@ package = "github.com/buckaroo-pm/host-security"
 target = "//:security"
 
 [[dependency]]
+package = "github.com/buckaroo-pm/madler-zlib"
+target = "//:zlib"
+
+[[dependency]]
 package = "github.com/buckaroo-pm/realm-core"
 target = "//:realm-core"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/realm-sync-cocoa"
+target = "//:realm"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/realm-sync-cocoa"
+target = "//:realm-parser"
 
 [lock."github.com/buckaroo-pm/host-core-foundation"]
 versions = [ "branch=master" ]
@@ -20,9 +32,17 @@ revision = "fd7081ffe1244afb86c41c2d41d3603f851feae8"
 versions = [ "branch=master" ]
 revision = "f7aba7ed43bd385648cb550128ce69800172343c"
 
+[lock."github.com/buckaroo-pm/madler-zlib"]
+versions = [ "1.2.11" ]
+revision = "cbbc5ea260a454509d0f461de248b8e0b67bc839"
+
 [lock."github.com/buckaroo-pm/realm-core"]
 versions = [ "branch=master" ]
 revision = "9849b5ac551a653ec0d541a7c13129c9b9de1bd3"
+
+[lock."github.com/buckaroo-pm/realm-sync-cocoa"]
+versions = [ "3.14.12" ]
+revision = "bcfadb6c672da4a064734f802601fb1f89a8dbac"
 
 [lock."github.com/buckaroo-pm/taocpp-pegtl"]
 versions = [ "2.7.1" ]

@@ -9,5 +9,13 @@ package = "github.com/buckaroo-pm/host-security"
 version = "*"
 
 [[dependency]]
+package = "github.com/buckaroo-pm/madler-zlib"
+version = "*"
+
+[[dependency]]
 package = "github.com/buckaroo-pm/realm-core"
 version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/realm-sync-cocoa"
+version = "*"
