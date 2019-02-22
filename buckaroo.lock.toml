@@ -1,4 +1,4 @@
-manifest = "b93b4ee67fede15760ee58379f96f7e589f3de0523db4b8ba060d8c8c3b0c2e0"
+manifest = "692495f4dcd0d1a0d001d1df77b5cf0e4be8a96fc24ad4f51d1667043c8a2baa"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/host-core-foundation"
@@ -33,16 +33,16 @@ versions = [ "branch=master" ]
 revision = "f7aba7ed43bd385648cb550128ce69800172343c"
 
 [lock."github.com/buckaroo-pm/madler-zlib"]
-versions = [ "1.2.11" ]
-revision = "cbbc5ea260a454509d0f461de248b8e0b67bc839"
+versions = [ "1.0.1" ]
+revision = "58ef5ba6591f866cf24cb18a18c301daa9f5bb11"
 
 [lock."github.com/buckaroo-pm/realm-core"]
 versions = [ "branch=master" ]
 revision = "9849b5ac551a653ec0d541a7c13129c9b9de1bd3"
 
 [lock."github.com/buckaroo-pm/realm-sync-cocoa"]
-versions = [ "3.14.12" ]
-revision = "bcfadb6c672da4a064734f802601fb1f89a8dbac"
+versions = [ "3.13.3" ]
+revision = "e0644363bdd7528fc5e41eaedc69a96d5f1546cc"
 
 [lock."github.com/buckaroo-pm/taocpp-pegtl"]
 versions = [ "2.7.1" ]
